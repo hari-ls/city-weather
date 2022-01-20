@@ -14,6 +14,145 @@
 </head>
 
 <body>
+    <!-- header section -->
+    <header class="bg-dark text-white text-center mb-3">
+        <div class="container-fluid p-2">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <!-- main section with two column layout -->
+    <main class="container p-3">
+        <div class="row">
+            <!-- column one: search form and city list -->
+            <aside class="col-3">
+                <section id="search">
+                    <div class="mb-3">
+                        <label for="query" class="form-label fs-2">Search for a city</label>
+                        <input type="text" class="form-control" id="query" aria-describedby="searchCity"
+                            placeholder="Adelaide">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </div>
+                </section>
+                <hr>
+                <section id="list">
+                    <ul class="list-group list-group-flush w-100 align-items-stretch gap-2">
+                        <li class="list-group-item list-group-item-dark text-center rounded">An item</li>
+                        <li class="list-group-item list-group-item-dark text-center rounded">A second item</li>
+                        <li class="list-group-item list-group-item-dark text-center rounded">A third item</li>
+                        <li class="list-group-item list-group-item-dark text-center rounded">A fourth item</li>
+                        <li class="list-group-item list-group-item-dark text-center rounded">And a fifth one</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- column two: today's weather and 5-day forecast -->
+            <article class="col-9">
+                <section id="today">
+                    <div class="container mb-3 p-2">
+                        <div class="row">
+                            <div class="col border border-dark">
+                                <h2>City name (date) <img src="" alt=""></h2>
+                                <p id="temp">Temp:</p>
+                                <p id="wind">Wind:</p>
+                                <p id="humidity">Humidity:</p>
+                                <p id="uv">UV Index:</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="forecast">
+                    <div class="container p-1">
+                        <div class="row">
+                            <h3 class="p-0">5-Day Forecast</h3>
+                        </div>
+                    </div>
+                    <div class="container p-2">
+                        <div class="row gap-2">
+                            <div class="col bg-dark text-white p-0 pt-1" id="day-1">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <h4>(Date)</h4>
+                                    </div>
+                                    <div class="row">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="row">
+                                        <p>Temp:</p>
+                                        <p>Wind:</p>
+                                        <p>Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-dark text-white p-0 pt-1" id="day-2">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <h4>(Date)</h4>
+                                    </div>
+                                    <div class="row">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="row">
+                                        <p>Temp:</p>
+                                        <p>Wind:</p>
+                                        <p>Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-dark text-white p-0 pt-1" id="day-3">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <h4>(Date)</h4>
+                                    </div>
+                                    <div class="row">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="row">
+                                        <p>Temp:</p>
+                                        <p>Wind:</p>
+                                        <p>Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-dark text-white p-0 pt-1" id="day-4">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <h4>(Date)</h4>
+                                    </div>
+                                    <div class="row">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="row">
+                                        <p>Temp:</p>
+                                        <p>Wind:</p>
+                                        <p>Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-dark text-white p-0 pt-1" id="day-5">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <h4>(Date)</h4>
+                                    </div>
+                                    <div class="row">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="row">
+                                        <p>Temp:</p>
+                                        <p>Wind:</p>
+                                        <p>Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
