@@ -11,24 +11,6 @@ header {
 .suggested-city {
   cursor: pointer;
 }
-.low {
-  background-color: #299500;
-}
-.moderate {
-  background-color: #f8e401;
-}
-.high {
-  background-color: #f85900;
-}
-.very-high {
-  background-color: #d70311;
-}
-.extreme {
-  background-color: #6b48c8;
-}
-.none {
-  background-color: lightgrey;
-}
 [data-day] {
   background-color: #33465b;
 }

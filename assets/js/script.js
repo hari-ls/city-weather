@@ -25,6 +25,7 @@ $("#search-btn").click(function () {
   var input = $("#query");
   var value = $(input).val();
   if (value) {
+    $("#forecast-grid").html(" ");
     fetchCurrentWeather(
       `${currentWeatherURL}?q=${value}&units=metric&appid=${key}`
     );
@@ -113,17 +114,17 @@ function setTodaysUV(uvi) {
   var todaysUV = $("#todays-uv").text(uvi);
   // update uvi background color based on the value
   if (uvi > 0 && uvi <= 2) {
-    $(todaysUV).addClass("low");
+    $(todaysUV).css("background-color", "#299500");
   } else if (uvi > 2 && uvi <= 5) {
-    $(todaysUV).addClass("moderate");
+    $(todaysUV).css("background-color", "#f8e401");
   } else if (uvi > 5 && uvi <= 8) {
-    $(todaysUV).addClass("high");
+    $(todaysUV).css("background-color", "#f85900");
   } else if (uvi > 8 && uvi <= 11) {
-    $(todaysUV).addClass("very-high");
+    $(todaysUV).css("background-color", "#d70311");
   } else if (uvi > 11) {
-    $(todaysUV).addClass("extreme");
+    $(todaysUV).css("background-color", "#6b48c8");
   } else {
-    $(todaysUV).addClass("none");
+    $(todaysUV).css("background-color", "#d3d3d3");
   }
 }
 // create forecast grid with information
