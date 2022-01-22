@@ -80,9 +80,10 @@ function fetchWeatherForecast(url) {
     })
     .then(function (data) {
       setTodaysUV(data.current.uvi);
-      for (let i = 0; i < 5; i++) {
+      // display forecast for next 5 days
+      for (let i = 1; i <= 5; i++) {
         setForecast(
-          i + 1,
+          i,
           data.daily[i].dt,
           data.daily[i].weather[0].icon,
           data.daily[i].temp.day,
